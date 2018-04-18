@@ -1,0 +1,25 @@
+*.serialize
+*.bak
+*.bk
+*.old
+.svn
+node_modules/
+vendor/
+
+# OS junk files
+[Tt]humbs.db
+*.DS_Store
+*.swp
+
+# IDE junk files
+.project
+.buildpath
+.settings
+.idea
+
+# Stats file for bundle analysis
+stats.json
+
+# Uncomment lines below when multiple people working on same project
+# dist/css/style.css
+# dist/js/*.js
