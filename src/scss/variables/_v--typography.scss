@@ -24,6 +24,7 @@ html {
     @include font-size-vw($font-size-base, $font-size-base, $font-size-base);
 }
 body {
+    position: relative;
     font-family: $ff-main-regular;
     direction: rtl;
     -webkit-font-smoothing: antialiased;

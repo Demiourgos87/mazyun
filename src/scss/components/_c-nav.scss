@@ -1,0 +1,30 @@
+.c-nav {
+    position: absolute;
+    top: 8.2rem;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    background: $color-seashell;
+    border-bottom: 2px solid $color-alizarin-crimson;
+    transform: translateY(-102%);
+    transition: transform .4s ease-in-out;
+    z-index: 8;
+
+    &.active {
+        transform: translateY(0);
+    }
+
+    &__item {
+        display: block;
+        width: 50%;
+        border-right: 1px solid $color-alto;
+        border-bottom: 1px solid $color-alto;
+    }
+
+    a {
+        display: block;
+        padding: 3.5rem;
+        font-size: 2.5rem;
+        color: $color-mine-shaft;
+    }
+}

@@ -1,0 +1,38 @@
+.c-search {
+    position: absolute;
+    top: 8.2rem;
+    width: 100%;
+    padding: 2rem 4rem;
+    background: $color-white;
+    border-bottom: 1px solid $color-spun-pearl;
+    transform: translateY(-102%);
+    transition: transform .3s ease-in-out;
+    z-index: 9;
+
+    &.active {
+        transform: translateY(0);
+    }
+
+    .c-search__icon {
+        @include absolute(center-vertical);
+        left: 3.9rem;
+        padding: 1.4rem;
+        width: 6.3rem;
+        background: $color-thunderbird;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    input {
+        width: 100%;
+        font-size: 2rem;
+        padding: 2rem 2rem 2rem 7rem;
+        border: 1px solid $color-seashell;
+
+        @include placeholder {
+            color: $color-spun-pearl;
+        };
+    }
+}

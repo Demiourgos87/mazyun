@@ -56,7 +56,7 @@ module.exports = {
             },
             // ----- Image loading
             {
-                test: /\.(jpe?g|png|gif)$/,
+                test: /\.(jpe?g|png|gif|svg)$/,
                 exclude: /(node_modules|fonts)/,
                 use: {
                     loader: 'file-loader',
