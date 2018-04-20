@@ -692,6 +692,22 @@ a {
     .c-social .icon:last-child {
       margin-right: 0; }
 
+.c-ad-holder {
+  margin: auto; }
+  .c-ad-holder img {
+    width: 100%; }
+  .c-ad-holder--mob {
+    width: 93%; }
+    @media (min-width: 768px) {
+      .c-ad-holder--mob {
+        display: none; } }
+  .c-ad-holder--full-desk {
+    width: 50.5%;
+    margin: 2rem auto; }
+    @media (max-width: 767px) {
+      .c-ad-holder--full-desk {
+        display: none; } }
+
 .b-header {
   position: relative;
   display: -webkit-box;

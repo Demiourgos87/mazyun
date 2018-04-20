@@ -1,0 +1,22 @@
+.c-ad-holder {
+    margin: auto;
+
+    img {
+        width: 100%;
+    }
+
+    &--mob {
+        width: 93%;
+        @include breakpoint(overPhone) {
+            display: none;
+        }
+    }
+
+    &--full-desk {
+        @include breakpoint(phone) {
+            display: none;
+        }
+        width: 50.5%;
+        margin: 2rem auto;
+    }
+}
