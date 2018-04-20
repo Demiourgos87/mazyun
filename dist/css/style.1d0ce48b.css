@@ -549,16 +549,13 @@ a {
   @media (min-width: 768px) {
     .l {
       padding: 0;
-      width: 97.5rem;
-      max-width: 975px; } }
-  @media (min-width: 1025px) {
-    .l {
-      max-width: 1440px;
+      width: 100rem;
+      max-width: 1000px;
       margin: auto; } }
 
 .c-nav {
   position: absolute;
-  top: 8.2rem;
+  top: 8rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -575,6 +572,13 @@ a {
   transition: transform .4s ease-in-out;
   transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
   z-index: 8; }
+  @media (min-width: 768px) {
+    .c-nav {
+      position: static;
+      background: #000000;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      border: 0; } }
   .c-nav.active {
     -webkit-transform: translateY(0);
             transform: translateY(0); }
@@ -583,15 +587,29 @@ a {
     width: 50%;
     border-right: 1px solid #DDDDDD;
     border-bottom: 1px solid #DDDDDD; }
+    @media (min-width: 768px) {
+      .c-nav__item {
+        display: inline-block;
+        width: auto;
+        border: 0; } }
   .c-nav a {
     display: block;
     padding: 3.5rem;
     font-size: 2.5rem;
     color: #333333; }
+    @media (min-width: 768px) {
+      .c-nav a {
+        color: #ffffff;
+        padding: 1.6rem 1.28rem;
+        font-size: 1.6rem;
+        background: transparent;
+        transition: background .2s ease; }
+        .c-nav a:hover {
+          background: rgba(255, 255, 255, 0.25); } }
 
-.c-search {
+.c-search--mob {
   position: absolute;
-  top: 8.2rem;
+  top: 8rem;
   width: 100%;
   padding: 2rem 4rem;
   background: #ffffff;
@@ -602,10 +620,13 @@ a {
   transition: transform .3s ease-in-out;
   transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
   z-index: 9; }
-  .c-search.active {
+  @media (min-width: 768px) {
+    .c-search--mob {
+      display: none; } }
+  .c-search--mob.active {
     -webkit-transform: translateY(0);
             transform: translateY(0); }
-  .c-search .c-search__icon {
+  .c-search--mob .c-search__icon {
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -614,21 +635,62 @@ a {
     padding: 1.4rem;
     width: 6.3rem;
     background: #D31F1D; }
-    .c-search .c-search__icon img {
-      width: 100%; }
-  .c-search input {
+    .c-search--mob .c-search__icon .icon {
+      color: #ffffff;
+      font-size: 3.4rem; }
+  .c-search--mob input {
     width: 100%;
     font-size: 2rem;
     padding: 2rem 2rem 2rem 7rem;
     border: 1px solid #f1f1f1; }
-    .c-search input::-webkit-input-placeholder {
+    .c-search--mob input::-webkit-input-placeholder {
       color: #b3b1b4; }
-    .c-search input:-moz-placeholder {
+    .c-search--mob input:-moz-placeholder {
       color: #b3b1b4; }
-    .c-search input::-moz-placeholder {
+    .c-search--mob input::-moz-placeholder {
       color: #b3b1b4; }
-    .c-search input:-ms-input-placeholder {
+    .c-search--mob input:-ms-input-placeholder {
       color: #b3b1b4; }
+
+.c-search--desk {
+  width: 34%;
+  margin-left: 6%;
+  position: relative; }
+  @media (max-width: 767px) {
+    .c-search--desk {
+      display: none; } }
+  .c-search--desk input {
+    width: 100%;
+    border: 1px solid #b3b1b4;
+    font-size: 1.5rem;
+    padding: 0.6rem; }
+  .c-search--desk .c-search__icon {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 1.1rem;
+    font-size: 1.8rem;
+    color: #b3b1b4; }
+
+.c-social {
+  width: 14%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+  @media (max-width: 767px) {
+    .c-social {
+      display: none; } }
+  .c-social .icon {
+    color: #b3b1b4;
+    font-size: 2.6rem;
+    margin-right: 1.1rem; }
+    .c-social .icon:last-child {
+      margin-right: 0; }
 
 .b-header {
   position: relative;
@@ -650,6 +712,21 @@ a {
   border-top: 1px solid #b3b1b4;
   border-bottom: 1px solid #b3b1b4;
   z-index: 10; }
+  @media (min-width: 768px) {
+    .b-header {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: initial;
+          -ms-flex-pack: initial;
+              justify-content: initial;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      border: 0;
+      margin-bottom: 0;
+      padding: 1rem 0 1.8rem 1.3rem; } }
   .b-header__left {
     width: 25.3%;
     display: -webkit-box;
@@ -659,15 +736,24 @@ a {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse; }
+    @media (min-width: 768px) {
+      .b-header__left {
+        display: none; } }
     .b-header__left figure {
       width: 50%;
       border-right: 1px solid #b3b1b4;
       padding: 14%; }
-      .b-header__left figure img {
-        width: 100%; }
+      .b-header__left figure .icon {
+        color: #b3b1b4;
+        font-size: 3.4rem; }
   .b-header__logo {
     width: 28%;
     margin-right: 1.6rem; }
+    @media (min-width: 768px) {
+      .b-header__logo {
+        width: 16.7%;
+        margin-right: 0;
+        margin-left: 29.5%; } }
     .b-header__logo img {
       width: 100%; }
 
@@ -690,14 +776,26 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-twitter:before {
+  content: "\F099"; }
+
+.icon-facebook:before {
+  content: "\F09A"; }
+
+.icon-facebook-f:before {
+  content: "\F09A"; }
+
+.icon-instagram:before {
+  content: "\EA92"; }
+
+.icon-pinterest2:before {
+  content: "\EAD2"; }
+
 .icon-arrow:before {
-  content: "\E90A";
-  color: #fff; }
+  content: "\E90A"; }
 
 .icon-menu:before {
-  content: "\E90B";
-  color: #b3b1b4; }
+  content: "\E90B"; }
 
 .icon-search:before {
-  content: "\E90C";
-  color: #b3b1b4; }
+  content: "\E90C"; }

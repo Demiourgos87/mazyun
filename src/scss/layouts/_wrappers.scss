@@ -12,11 +12,8 @@
     padding: 0;
     @include breakpoint(overPhone) {
         padding: 0;
-        width: 97.5rem;
-        max-width: 975px;
-    }
-    @include breakpoint(desktop) {
-        max-width: $site-desk-design;
+        width: 100rem;
+        max-width: 1000px;
         margin: auto;
     }
 }

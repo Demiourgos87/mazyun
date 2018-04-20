@@ -29,21 +29,43 @@
   @return unquote("\"") + $str + unquote("\"");
 }
 
+.icon-twitter {
+  &:before {
+    content: unicode($icon-twitter);
+  }
+}
+.icon-facebook {
+  &:before {
+    content: unicode($icon-facebook);
+  }
+}
+.icon-facebook-f {
+  &:before {
+    content: unicode($icon-facebook-f);
+  }
+}
+.icon-instagram {
+  &:before {
+    content: unicode($icon-instagram);
+  }
+}
+.icon-pinterest2 {
+  &:before {
+    content: unicode($icon-pinterest2);
+  }
+}
 .icon-arrow {
   &:before {
     content: unicode($icon-arrow);
-    color: #fff;
   }
 }
 .icon-menu {
   &:before {
     content: unicode($icon-menu);
-    color: #b3b1b4;
   }
 }
 .icon-search {
   &:before {
     content: unicode($icon-search);
-    color: #b3b1b4;
   }
 }

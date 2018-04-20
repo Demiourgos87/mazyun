@@ -1,6 +1,6 @@
 .c-nav {
     position: absolute;
-    top: 8.2rem;
+    top: 8rem;
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -9,6 +9,12 @@
     transform: translateY(-102%);
     transition: transform .4s ease-in-out;
     z-index: 8;
+    @include breakpoint(overPhone) {
+        position: static;
+        background: $color-black;
+        transform: translateY(0);
+        border: 0;
+    }
 
     &.active {
         transform: translateY(0);
@@ -19,6 +25,11 @@
         width: 50%;
         border-right: 1px solid $color-alto;
         border-bottom: 1px solid $color-alto;
+        @include breakpoint(overPhone) {
+            display: inline-block;
+            width: auto;
+            border: 0;
+        }
     }
 
     a {
@@ -26,5 +37,16 @@
         padding: 3.5rem;
         font-size: 2.5rem;
         color: $color-mine-shaft;
+        @include breakpoint(overPhone) {
+            color: $color-white;
+            padding: 1.6rem 1.28rem;
+            font-size: 1.6rem;
+            background: transparent;
+            transition: background .2s ease;
+
+            &:hover {
+                background: rgba(255,255,255,0.25);
+            }
+        }
     }
 }

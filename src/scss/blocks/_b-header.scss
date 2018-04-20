@@ -9,20 +9,32 @@
     border-top: 1px solid $color-spun-pearl;
     border-bottom: 1px solid $color-spun-pearl;
     z-index: 10;
+    @include breakpoint(overPhone) {
+        flex-direction: row;
+        justify-content: initial;
+        align-items: flex-end;
+        border: 0;
+        margin-bottom: 0;
+        padding: 1rem 0 1.8rem 1.3rem;
+    }
 
     &__left {
         width: 25.3%;
         // max-width: 95px;
         display: flex;
         flex-direction: row-reverse;
+        @include breakpoint(overPhone) {
+            display: none;
+        }
 
         figure {
             width: 50%;
             border-right: 1px solid $color-spun-pearl;
             padding: 14%;
 
-            img {
-                width: 100%;
+            .icon {
+                color: $color-spun-pearl;
+                font-size: 3.4rem;
             }
         }
     }
@@ -31,6 +43,11 @@
         width: 28%;
         // max-width: 105px;
         margin-right: 1.6rem;
+        @include breakpoint(overPhone) {
+            width: 16.7%;
+            margin-right: 0;
+            margin-left: 29.5%;
+        }
 
         img {
             width: 100%;

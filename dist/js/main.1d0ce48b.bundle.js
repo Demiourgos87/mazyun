@@ -67,7 +67,7 @@ module.exports = function () {
     // Search
 
     var searchTrigger = $('.b-header__search-trigger'),
-        searchBar = $('.c-search');
+        searchBar = $('.c-search--mob');
 
     function searchHandler() {
         searchBar.toggleClass('active');

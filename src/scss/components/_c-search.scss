@@ -1,6 +1,6 @@
-.c-search {
+.c-search--mob {
     position: absolute;
-    top: 8.2rem;
+    top: 8rem;
     width: 100%;
     padding: 2rem 4rem;
     background: $color-white;
@@ -8,6 +8,9 @@
     transform: translateY(-102%);
     transition: transform .3s ease-in-out;
     z-index: 9;
+    @include breakpoint(overPhone) {
+        display: none;
+    }
 
     &.active {
         transform: translateY(0);
@@ -20,8 +23,9 @@
         width: 6.3rem;
         background: $color-thunderbird;
 
-        img {
-            width: 100%;
+        .icon {
+            color: $color-white;
+            font-size: 3.4rem;
         }
     }
 
@@ -34,5 +38,28 @@
         @include placeholder {
             color: $color-spun-pearl;
         };
+    }
+}
+
+.c-search--desk {
+    @include breakpoint(phone) {
+        display: none;
+    }
+    width: 34%;
+    margin-left: 6%;
+    position: relative;
+
+    input {
+        width: 100%;
+        border: 1px solid $color-spun-pearl;
+        font-size: 1.5rem;
+        padding: 0.6rem;
+    }
+
+    .c-search__icon {
+        @include absolute(center-vertical);
+        left: 1.1rem;
+        font-size: 1.8rem;
+        color: $color-spun-pearl;
     }
 }
