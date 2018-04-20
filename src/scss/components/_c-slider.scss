@@ -1,0 +1,54 @@
+.c-slider {
+    position: relative;
+    width: 93%;
+    margin: auto;
+    margin-bottom: 4.7rem;
+
+    &__nav {
+        @include absolute(center);
+        z-index: 5;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .icon {
+            color: $color-white;
+            font-size: 8rem;
+        }
+
+        .right {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__slide {
+        position: relative;
+
+        &__txt {
+            width: 90%;
+            position: absolute;
+            right: 1.5rem;
+            bottom: 1.8rem;
+            font-size: cr(18.46px);
+            line-height: cr(30.77px);
+            @include breakpoint(overPhone) {
+                font-size: cr(18px);
+                line-height: cr(30px);
+            }
+
+            span {
+                display: inline;
+                padding: 0.2rem;
+                color: $color-white;
+                background: $color-black;
+                box-shadow: 5px 0 0 $color-black, -5px 0 0 $color-black;
+            }
+        }
+    }
+
+    &__thumbs {
+        @include breakpoint(phone) {
+            display: none;
+        }
+    }
+}
