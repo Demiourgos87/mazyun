@@ -1,8 +1,19 @@
 .c-slider {
+    direction: ltr;
     position: relative;
     width: 93%;
     margin: auto;
     margin-bottom: 4.7rem;
+    @include breakpoint(overPhone) {
+        width: 66.3%;
+        margin: 0;
+    }
+
+    &__slides-wrap {
+        @include breakpoint(overPhone) {
+            margin-bottom: 1.6rem;
+        }
+    }
 
     &__nav {
         @include absolute(center);
@@ -10,13 +21,16 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        @include breakpoint(overPhone) {
+            display: none;
+        }
 
         .icon {
             color: $color-white;
             font-size: 8rem;
         }
 
-        .right {
+        .left {
             transform: rotate(180deg);
         }
     }
@@ -31,6 +45,7 @@
             bottom: 1.8rem;
             font-size: cr(18.46px);
             line-height: cr(30.77px);
+            direction: rtl;
             @include breakpoint(overPhone) {
                 font-size: cr(18px);
                 line-height: cr(30px);
@@ -49,6 +64,19 @@
     &__thumbs {
         @include breakpoint(phone) {
             display: none;
+        }
+        width: 100%;
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: space-between;
+
+        img {
+            opacity: 0.6;
+            transition: opacity .4s ease;
+
+            &.active {
+                opacity: 1;
+            }
         }
     }
 }
