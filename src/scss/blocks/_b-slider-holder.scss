@@ -5,4 +5,13 @@
         flex-flow: row-reverse wrap;
         align-items: flex-start;
     }
+
+    &__right {
+        width: 100%;
+        margin: auto;
+        @include breakpoint(overPhone) {
+            width: 66.3%;
+            margin: 0;
+        }
+    }
 }

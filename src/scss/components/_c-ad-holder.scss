@@ -6,7 +6,8 @@
     }
 
     &--mob {
-        width: 93%;
+        width: 100%;
+        margin-bottom: 8.5rem;
         @include breakpoint(overPhone) {
             display: none;
         }

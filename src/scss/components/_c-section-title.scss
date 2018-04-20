@@ -1,0 +1,16 @@
+.c-section-title {
+    position: relative;
+    font-size: cr(42.85px);
+    @include breakpoint(overPhone) {
+        font-size: cr(20px);
+    }
+
+    &::before {
+        display: block;
+        content: '';
+        width: 13rem;
+        height: 0.55rem;
+        background: $color-monza;
+        margin-bottom: 2rem;
+    }
+}
