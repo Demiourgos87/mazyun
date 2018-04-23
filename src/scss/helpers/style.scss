@@ -84,4 +84,7 @@
     border-style: solid;
     border-width: 2rem 0 2rem 1.7rem;
     border-color: transparent transparent transparent $color-white;
+    @include breakpoint(overPhone) {
+        border-width: 1rem 0 1rem 1rem;
+    }
 }

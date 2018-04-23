@@ -4,6 +4,9 @@
     width: 100%;
     margin: auto;
     margin-bottom: 4.7rem;
+    @include breakpoint(overPhone) {
+        margin-bottom: 5.4rem;
+    }
 
     &__slides-wrap {
         @include breakpoint(overPhone) {

@@ -723,6 +723,9 @@ a {
   margin: auto;
   margin-bottom: 4.7rem; }
   @media (min-width: 768px) {
+    .c-slider {
+      margin-bottom: 5.4rem; } }
+  @media (min-width: 768px) {
     .c-slider__slides-wrap {
       margin-bottom: 1.6rem; } }
   .c-slider__nav {
@@ -798,7 +801,9 @@ a {
   margin-bottom: 4.5rem; }
   @media (min-width: 768px) {
     .c-section-title {
-      font-size: 2rem; } }
+      font-size: 2rem;
+      margin-bottom: 2.1rem;
+      width: 100%; } }
   .c-section-title::before {
     display: block;
     content: '';
@@ -806,6 +811,11 @@ a {
     height: 0.55rem;
     background: #D0021B;
     margin-bottom: 2rem; }
+    @media (min-width: 768px) {
+      .c-section-title::before {
+        width: 6rem;
+        height: 0.35rem;
+        margin-bottom: 1rem; } }
 
 .o-main {
   width: 100%;
@@ -816,6 +826,9 @@ a {
     position: relative;
     width: 100%;
     margin-bottom: 2.4rem; }
+    @media (min-width: 768px) {
+      .o-main__img {
+        margin-bottom: 1rem; } }
     .o-main__img img {
       width: 100%; }
     .o-main__img .icon {
@@ -825,6 +838,10 @@ a {
       background: #D0021B;
       width: 10rem;
       height: 10rem; }
+      @media (min-width: 768px) {
+        .o-main__img .icon {
+          width: 4.5rem;
+          height: 4.5rem; } }
       .o-main__img .icon .icon-play {
         position: absolute;
         top: 50%;
@@ -833,23 +850,41 @@ a {
                 transform: translate(-50%, -50%); }
   .o-main__tag {
     margin-bottom: 3rem; }
+    @media (min-width: 768px) {
+      .o-main__tag {
+        margin-bottom: 1.3rem; } }
     .o-main__tag span {
       color: #D0021B; }
     .o-main__tag__txt {
       font-family: "DroidKufi-Bold", Arial, sans-serif;
       font-size: 3rem;
       margin-right: 0.3rem; }
+      @media (min-width: 768px) {
+        .o-main__tag__txt {
+          font-size: 1.4rem;
+          margin-right: 0; } }
     .o-main__tag .icon-pen {
       font-size: 2.5rem; }
+      @media (min-width: 768px) {
+        .o-main__tag .icon-pen {
+          font-size: 1.5rem; } }
   .o-main__title {
     font-family: "DroidKufi-Bold", Arial, sans-serif;
     font-size: 3.856rem;
     margin-bottom: 6rem;
     color: #000000; }
+    @media (min-width: 768px) {
+      .o-main__title {
+        font-size: 1.8rem;
+        margin-bottom: 2.7rem; } }
   .o-main__desc {
     font-size: 3.428rem;
     line-height: 5.142rem;
     color: #000000; }
+    @media (min-width: 768px) {
+      .o-main__desc {
+        font-size: 1.6rem;
+        line-height: 2.4rem; } }
 
 .b-header {
   position: relative;
@@ -928,7 +963,8 @@ a {
             flex-flow: row-reverse wrap;
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: flex-start; } }
+            align-items: flex-start;
+    margin-bottom: 7.3rem; } }
 
 .b-slider-holder__right {
   width: 100%;
@@ -936,7 +972,22 @@ a {
   @media (min-width: 768px) {
     .b-slider-holder__right {
       width: 66.3%;
-      margin: 0; } }
+      margin: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap; } }
+  @media (min-width: 768px) {
+    .b-slider-holder__right .o-main {
+      width: 48.5%;
+      margin-bottom: 0;
+      margin-left: 3%; } }
+  @media (min-width: 768px) {
+    .b-slider-holder__right .o-main:nth-of-type(2n+0) {
+      margin-left: 0; } }
 
 @font-face {
   font-family: 'icomoon';
@@ -993,6 +1044,9 @@ a {
   border-style: solid;
   border-width: 2rem 0 2rem 1.7rem;
   border-color: transparent transparent transparent #ffffff; }
+  @media (min-width: 768px) {
+    .icon-play {
+      border-width: 1rem 0 1rem 1rem; } }
 
 /* Slider */
 .slick-slider {
