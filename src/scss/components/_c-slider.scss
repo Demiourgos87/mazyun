@@ -55,6 +55,10 @@
                 box-shadow: 5px 0 0 $color-black, -5px 0 0 $color-black;
             }
         }
+
+        &__img img {
+            width: 100%;
+        }
     }
 
     &__thumbs {

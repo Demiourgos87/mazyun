@@ -19,8 +19,8 @@ module.exports = function() {
             autoplaySpeed: 4000,
             speed: 600,
             dots: false,
-            prevArrow: $arrowLeft,
-            nextArrow: $arrowRight
+            prevArrow: $arrowRight,
+            nextArrow: $arrowLeft
         });
     }
 

@@ -768,6 +768,8 @@ a {
         color: #ffffff;
         background: #000000;
         box-shadow: 5px 0 0 #000000, -5px 0 0 #000000; }
+    .c-slider__slide__img img {
+      width: 100%; }
   .c-slider__thumbs {
     width: 100%;
     display: -webkit-box;
@@ -792,7 +794,8 @@ a {
 
 .c-section-title {
   position: relative;
-  font-size: 4.285rem; }
+  font-size: 4.285rem;
+  margin-bottom: 4.5rem; }
   @media (min-width: 768px) {
     .c-section-title {
       font-size: 2rem; } }
@@ -803,6 +806,50 @@ a {
     height: 0.55rem;
     background: #D0021B;
     margin-bottom: 2rem; }
+
+.o-main {
+  width: 100%;
+  margin-bottom: 11rem; }
+  .o-main:last-child {
+    margin-bottom: 0; }
+  .o-main__img {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2.4rem; }
+    .o-main__img img {
+      width: 100%; }
+    .o-main__img .icon {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: #D0021B;
+      width: 10rem;
+      height: 10rem; }
+      .o-main__img .icon .icon-play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+  .o-main__tag {
+    margin-bottom: 3rem; }
+    .o-main__tag span {
+      color: #D0021B; }
+    .o-main__tag__txt {
+      font-family: "DroidKufi-Bold", Arial, sans-serif;
+      font-size: 3rem;
+      margin-right: 0.3rem; }
+    .o-main__tag .icon-pen {
+      font-size: 2.5rem; }
+  .o-main__title {
+    font-family: "DroidKufi-Bold", Arial, sans-serif;
+    font-size: 3.856rem;
+    margin-bottom: 6rem;
+    color: #000000; }
+  .o-main__desc {
+    font-size: 3.428rem;
+    line-height: 5.142rem;
+    color: #000000; }
 
 .b-header {
   position: relative;
@@ -910,6 +957,21 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-pen:before {
+  content: "\E900"; }
+
+.icon-arrow:before {
+  content: "\E90A";
+  color: #fff; }
+
+.icon-menu:before {
+  content: "\E90B";
+  color: #b3b1b4; }
+
+.icon-search:before {
+  content: "\E90C";
+  color: #b3b1b4; }
+
 .icon-twitter:before {
   content: "\F099"; }
 
@@ -925,14 +987,12 @@ a {
 .icon-pinterest2:before {
   content: "\EAD2"; }
 
-.icon-arrow:before {
-  content: "\E90A"; }
-
-.icon-menu:before {
-  content: "\E90B"; }
-
-.icon-search:before {
-  content: "\E90C"; }
+.icon-play {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 2rem 0 2rem 1.7rem;
+  border-color: transparent transparent transparent #ffffff; }
 
 /* Slider */
 .slick-slider {

@@ -29,6 +29,29 @@
   @return unquote("\"") + $str + unquote("\"");
 }
 
+.icon-pen {
+  &:before {
+    content: unicode($icon-pen);
+  }
+}
+.icon-arrow {
+  &:before {
+    content: unicode($icon-arrow);
+    color: #fff;
+  }
+}
+.icon-menu {
+  &:before {
+    content: unicode($icon-menu);
+    color: #b3b1b4;
+  }
+}
+.icon-search {
+  &:before {
+    content: unicode($icon-search);
+    color: #b3b1b4;
+  }
+}
 .icon-twitter {
   &:before {
     content: unicode($icon-twitter);
@@ -54,18 +77,11 @@
     content: unicode($icon-pinterest2);
   }
 }
-.icon-arrow {
-  &:before {
-    content: unicode($icon-arrow);
-  }
-}
-.icon-menu {
-  &:before {
-    content: unicode($icon-menu);
-  }
-}
-.icon-search {
-  &:before {
-    content: unicode($icon-search);
-  }
+
+.icon-play {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 2rem 0 2rem 1.7rem;
+    border-color: transparent transparent transparent $color-white;
 }
