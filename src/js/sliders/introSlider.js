@@ -4,9 +4,9 @@ var slick = require('slick-carousel');
 module.exports = function() {
     // HP slider
 
-    var $sliderWrap = $('.c-slider'),
-        $slider = $sliderWrap.find('.c-slider__slides-wrap'),
-        $arrows = $sliderWrap.find('.c-slider__nav'),
+    var $sliderWrap = $('.c-intro-slider'),
+        $slider = $sliderWrap.find('.c-intro-slider__slides-wrap'),
+        $arrows = $sliderWrap.find('.c-intro-slider__nav'),
         $arrowLeft = $arrows.find('.left'),
         $arrowRight = $arrows.find('.right'),
         windowWidth = $(window).outerWidth();
@@ -25,7 +25,7 @@ module.exports = function() {
     }
 
     function desktopSlider() {
-        var $thumbs = $sliderWrap.find('.c-slider__thumbs').children();
+        var $thumbs = $sliderWrap.find('.c-intro-slider__thumbs').children();
 
         $slider.slick({
             slidesToShow: 1,

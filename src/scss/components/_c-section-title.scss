@@ -21,4 +21,22 @@
             margin-bottom: 1rem;
         }
     }
+
+    &.title--centered {
+        text-align: center;
+
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            display: block;
+            content: '';
+            width: 13rem;
+            height: 0.55rem;
+            background: $color-monza;
+            margin: auto;
+            margin-top: 2rem;
+        }
+    }
 }

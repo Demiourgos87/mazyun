@@ -16,13 +16,13 @@ var css = __webpack_require__(2);
 // ----- Require modules here
 var nav = __webpack_require__(4);
 var searchHandler = __webpack_require__(5);
-var slider = __webpack_require__(6);
+var introSlider = __webpack_require__(6);
 
 // ----- Call modules here
 $(document).ready(function () {
     nav();
     searchHandler();
-    slider();
+    introSlider();
 });
 
 /***/ }),
@@ -91,9 +91,9 @@ var slick = __webpack_require__(7);
 module.exports = function () {
     // HP slider
 
-    var $sliderWrap = $('.c-slider'),
-        $slider = $sliderWrap.find('.c-slider__slides-wrap'),
-        $arrows = $sliderWrap.find('.c-slider__nav'),
+    var $sliderWrap = $('.c-intro-slider'),
+        $slider = $sliderWrap.find('.c-intro-slider__slides-wrap'),
+        $arrows = $sliderWrap.find('.c-intro-slider__nav'),
         $arrowLeft = $arrows.find('.left'),
         $arrowRight = $arrows.find('.right'),
         windowWidth = $(window).outerWidth();
@@ -112,7 +112,7 @@ module.exports = function () {
     }
 
     function desktopSlider() {
-        var $thumbs = $sliderWrap.find('.c-slider__thumbs').children();
+        var $thumbs = $sliderWrap.find('.c-intro-slider__thumbs').children();
 
         $slider.slick({
             slidesToShow: 1,

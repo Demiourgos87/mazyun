@@ -8,11 +8,11 @@ var css = require('./scss/style.scss');
 // ----- Require modules here
 var nav = require('./js/nav/nav.js');
 var searchHandler = require('./js/search/search.js');
-var slider = require('./js/slider/slider.js');
+var introSlider = require('./js/sliders/introSlider.js');
 
 // ----- Call modules here
 $(document).ready(function() {
     nav();
     searchHandler();
-    slider();
+    introSlider();
 });
