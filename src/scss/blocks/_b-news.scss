@@ -1,0 +1,72 @@
+.b-news {
+    @include breakpoint(overPhone) {
+        padding: 0 1.3rem;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    & .o-main.first {
+        @include breakpoint(overPhone) {
+            width: 49.5%;
+            margin-left: 2.5%;
+        }
+
+        .o-main__img .icon {
+            @include breakpoint(overPhone) {
+                width: 7rem;
+                height: 7rem;
+            }
+        }
+    }
+
+    .o-main {
+        @include breakpoint(phone) {
+            margin-bottom: 6.9rem;
+
+            &__img {
+                margin-bottom: 1.9rem;
+            }
+
+            &__tag {
+                margin-bottom: 1.2rem;
+
+                span {
+                    font-size: cr(19px);
+                }
+
+                &__txt {
+                    font-size: cr(19.3px);
+                }
+            }
+
+            &__title {
+                font-size: cr(24.8px);
+                line-height: cr(41.34px);
+                margin-bottom: 2.1rem;
+            }
+
+            &__desc {
+                font-size: cr(22px);
+                line-height: cr(33px);
+            }
+        }
+    }
+
+    &__o-small {
+        display: flex;
+        flex-flow: row wrap;
+        @include breakpoint(overPhone) {
+            width: 48%;
+        }
+
+        .o-main {
+            width: 48%;
+            margin-left: 4%;
+            margin-bottom: 2.6rem;
+
+            &:nth-child(2n+0) {
+                margin-left: 0;
+            }
+        }
+    }
+}

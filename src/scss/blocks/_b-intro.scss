@@ -1,10 +1,10 @@
-.b-slider-holder {
+.b-intro {
+    margin-bottom: 7.3rem;
     @include breakpoint(overPhone) {
         padding: 0 1.3rem;
         display: flex;
         flex-flow: row-reverse wrap;
         align-items: flex-start;
-        margin-bottom: 7.3rem;
     }
 
     &__right {
