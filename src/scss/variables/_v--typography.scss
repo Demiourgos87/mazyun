@@ -28,6 +28,7 @@ html, body {
 html {
     @include font-size-vw($font-size-base, $font-size-base, $font-size-base);
 }
+
 body {
     position: relative;
     font-family: $ff-main-regular;

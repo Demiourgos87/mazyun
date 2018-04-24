@@ -1,4 +1,15 @@
 // ----- Buttons
 .c-btn {
-
+    display: inline-block;
+    color: $color-white;
+    background: $color-monza;
+    padding: 3rem 3.5rem;
+    border: 0;
+    outline: 0;
+    font-family: $ff-main-bold;
+    font-size: cr(35.5px);
+    @include breakpoint(overPhone) {
+        font-size: cr(16px);
+        padding: 1.4rem 1.5rem;
+    }
 }

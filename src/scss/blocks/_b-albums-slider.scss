@@ -1,8 +1,10 @@
 .b-albums-slider {
     background: $color-mine-shaft;
     padding: 3.8rem 0 5.1rem 0;
+    margin-bottom: 5.1rem;
     @include breakpoint(overPhone) {
         padding: 3.8rem 0 3.2rem 0;
+        margin-bottom: 8.8rem;
     }
 
     .c-section-title {

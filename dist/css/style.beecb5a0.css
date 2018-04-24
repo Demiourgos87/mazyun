@@ -557,6 +557,20 @@ a {
       max-width: 1000px;
       margin: auto; } }
 
+.c-btn {
+  display: inline-block;
+  color: #ffffff;
+  background: #D0021B;
+  padding: 3rem 3.5rem;
+  border: 0;
+  outline: 0;
+  font-family: "DroidKufi-Bold", Arial, sans-serif;
+  font-size: 3.55rem; }
+  @media (min-width: 768px) {
+    .c-btn {
+      font-size: 1.6rem;
+      padding: 1.4rem 1.5rem; } }
+
 .c-nav {
   position: absolute;
   top: 8rem;
@@ -830,7 +844,8 @@ a {
     .c-section-title {
       font-size: 2rem;
       margin-bottom: 2.1rem;
-      width: 100%; } }
+      width: 100%;
+      letter-spacing: 0.05em; } }
   .c-section-title::before {
     display: block;
     content: '';
@@ -857,6 +872,50 @@ a {
       background: #D0021B;
       margin: auto;
       margin-top: 2rem; }
+
+.c-quiz-start {
+  width: 100%;
+  border: 1px solid #000000;
+  padding: 5.5rem 0 5rem 0;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .c-quiz-start {
+      width: 31%;
+      padding: 2rem 0; } }
+  .c-quiz-start .c-section-title.title--centered {
+    color: #000000;
+    font-size: 4.44rem;
+    margin-bottom: 4rem; }
+    @media (min-width: 768px) {
+      .c-quiz-start .c-section-title.title--centered {
+        font-size: 2rem;
+        margin-bottom: 1.8rem; } }
+    .c-quiz-start .c-section-title.title--centered::after {
+      width: 13rem;
+      margin-top: 3.5rem; }
+      @media (min-width: 768px) {
+        .c-quiz-start .c-section-title.title--centered::after {
+          width: 6rem;
+          margin-top: 1.5rem; } }
+  .c-quiz-start__img {
+    width: 100%;
+    margin-bottom: 3.5rem; }
+    @media (min-width: 768px) {
+      .c-quiz-start__img {
+        margin-bottom: 1.6rem; } }
+    .c-quiz-start__img img {
+      width: 100%; }
+  .c-quiz-start__title {
+    text-align: center;
+    color: #000000;
+    font-size: 3rem;
+    padding: 0 2rem;
+    line-height: 1.7;
+    margin-bottom: 4.2rem; }
+    @media (min-width: 768px) {
+      .c-quiz-start__title {
+        font-size: 1.35rem;
+        margin-bottom: 1.8rem; } }
 
 .o-main {
   width: 100%;
@@ -926,6 +985,40 @@ a {
       .o-main__desc {
         font-size: 1.6rem;
         line-height: 2.4rem; } }
+
+.o-simple {
+  width: 100%;
+  position: relative;
+  margin-bottom: 4.5rem; }
+  @media (min-width: 768px) {
+    .o-simple {
+      width: 48%;
+      margin-left: 4%;
+      margin-bottom: 2rem; } }
+  .o-simple:nth-child(2n+0) {
+    margin-left: 0; }
+  .o-simple:last-child {
+    margin-bottom: 0; }
+  .o-simple__img {
+    width: 100%; }
+    .o-simple__img img {
+      width: 100%; }
+  .o-simple__txt {
+    width: 85%;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 4rem;
+    line-height: 1.85; }
+    @media (min-width: 768px) {
+      .o-simple__txt {
+        font-size: 1.7rem; } }
+    .o-simple__txt span {
+      display: inline;
+      padding: 0.2rem;
+      color: #ffffff;
+      background: #000000;
+      box-shadow: 5px 0 0 #000000, -5px 0 0 #000000; }
 
 .b-header {
   position: relative;
@@ -1091,13 +1184,56 @@ a {
 
 .b-albums-slider {
   background: #2c2c2c;
-  padding: 3.8rem 0 5.1rem 0; }
+  padding: 3.8rem 0 5.1rem 0;
+  margin-bottom: 5.1rem; }
   @media (min-width: 768px) {
     .b-albums-slider {
-      padding: 3.8rem 0 3.2rem 0; } }
+      padding: 3.8rem 0 3.2rem 0;
+      margin-bottom: 8.8rem; } }
   .b-albums-slider .c-section-title {
     color: #ffffff;
     font-size: 2rem; }
+
+@media (min-width: 768px) {
+  .b-tech {
+    padding: 0 2rem 0 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; } }
+
+.b-tech .c-section-title {
+  padding-right: 2rem;
+  margin-bottom: 6.5rem; }
+  @media (min-width: 768px) {
+    .b-tech .c-section-title {
+      padding: 0;
+      margin-bottom: 3.5rem; } }
+
+.b-tech__objects-list {
+  padding: 0 2rem;
+  margin-bottom: 6rem; }
+  @media (min-width: 768px) {
+    .b-tech__objects-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      padding: 0;
+      width: 66.5%;
+      margin-left: 2.5%; } }
 
 @font-face {
   font-family: 'icomoon';

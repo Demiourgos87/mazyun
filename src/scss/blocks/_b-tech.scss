@@ -1,0 +1,30 @@
+.b-tech {
+    @include breakpoint(overPhone) {
+        padding: 0 2rem 0 0.5rem;
+        display: flex;
+        align-items: flex-start;
+        flex-flow: row wrap;
+    }
+
+    .c-section-title {
+        padding-right: 2rem;
+        margin-bottom: 6.5rem;
+        @include breakpoint(overPhone) {
+            padding: 0;
+            margin-bottom: 3.5rem;
+        }
+    }
+
+    &__objects-list {
+        padding: 0 2rem;
+        margin-bottom: 6rem;
+        @include breakpoint(overPhone) {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            padding: 0;
+            width: 66.5%;
+            margin-left: 2.5%;
+        }
+    }
+}
