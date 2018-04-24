@@ -1,0 +1,23 @@
+.b-watches {
+    @include breakpoint(overPhone) {
+        padding: 0 2rem 0 0.5rem;
+    }
+
+    .c-section-title {
+        margin-bottom: 0.3rem;
+        @include breakpoint(overPhone) {
+            margin-bottom: 1.8rem;
+        }
+    }
+
+    .o-simple {
+        width: 100%;
+
+        &__txt {
+            font-size: cr(18.43px);
+            @include breakpoint(overPhone) {
+                font-size: cr(25.2px);
+            }
+        }
+    }
+}

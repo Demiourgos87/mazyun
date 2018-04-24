@@ -1,9 +1,11 @@
 .b-tech {
+    margin-bottom: 5.3rem;
     @include breakpoint(overPhone) {
         padding: 0 2rem 0 0.5rem;
         display: flex;
         align-items: flex-start;
         flex-flow: row wrap;
+        margin-bottom: 4rem;
     }
 
     .c-section-title {
@@ -25,6 +27,7 @@
             padding: 0;
             width: 66.5%;
             margin-left: 2.5%;
+            margin-bottom: 0;
         }
     }
 }
