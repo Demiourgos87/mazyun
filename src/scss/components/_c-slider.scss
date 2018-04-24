@@ -1,4 +1,4 @@
-.c-intro-slider {
+.c-slider {
     direction: ltr;
     position: relative;
     width: 100%;
@@ -6,6 +6,37 @@
     margin-bottom: 4.7rem;
     @include breakpoint(overPhone) {
         margin-bottom: 5.4rem;
+    }
+
+    &.red--text {
+        width: 97%;
+        margin-bottom: 0;
+        @include breakpoint(overPhone) {
+            width: 65%;
+        }
+
+        .c-slider__nav {
+            display: flex;
+
+            .icon {
+                font-size: 10rem;
+            }
+
+            .left {
+                position: relative;
+                left: -14.7rem;
+            }
+
+            .right {
+                position: relative;
+                right: -13.1rem;
+            }
+        }
+
+        .c-slider__slide__txt span {
+            background: $color-monza;
+            box-shadow: 5px 0 0 $color-monza, -5px 0 0 $color-monza;
+        }
     }
 
     &__slides-wrap {

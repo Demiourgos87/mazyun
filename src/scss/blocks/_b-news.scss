@@ -1,9 +1,9 @@
 .b-news {
-    padding: 0 2.2rem;
     @include breakpoint(overPhone) {
         padding: 0 1.3rem;
         display: flex;
         flex-flow: row wrap;
+        margin-bottom: 3rem;
     }
 
     & .o-main.first {

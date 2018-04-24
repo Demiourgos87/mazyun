@@ -24,6 +24,8 @@
 
     &.title--centered {
         text-align: center;
+        letter-spacing: 0.06em;
+        margin-bottom: 2.8rem;
 
         &::before {
             display: none;
@@ -32,7 +34,7 @@
         &::after {
             display: block;
             content: '';
-            width: 13rem;
+            width: 6rem;
             height: 0.55rem;
             background: $color-monza;
             margin: auto;

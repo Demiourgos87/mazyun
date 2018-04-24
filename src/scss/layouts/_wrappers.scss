@@ -9,7 +9,7 @@
 
 .l {
     width: 100%;
-    padding: 0;
+    padding: 0 2.2rem;
     @include breakpoint(overPhone) {
         padding: 0;
         width: 100%;
