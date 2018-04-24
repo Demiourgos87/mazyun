@@ -57,7 +57,6 @@ module.exports = function() {
             }
 
             if ($thumbs.length > 0) {
-                console.log('has thumbs');
                 $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
                     $thumbs.removeClass('active');
                     $($thumbs[nextSlide]).addClass('active');

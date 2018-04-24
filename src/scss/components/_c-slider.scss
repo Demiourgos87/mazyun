@@ -16,20 +16,22 @@
         }
 
         .c-slider__nav {
-            display: flex;
+            @include breakpoint(desktop) {
+                display: flex;
 
-            .icon {
-                font-size: 10rem;
-            }
+                .icon {
+                    font-size: 10rem;
+                }
 
-            .left {
-                position: relative;
-                left: -14.7rem;
-            }
+                .left {
+                    position: relative;
+                    left: -14.7rem;
+                }
 
-            .right {
-                position: relative;
-                right: -13.1rem;
+                .right {
+                    position: relative;
+                    right: -13.1rem;
+                }
             }
         }
 

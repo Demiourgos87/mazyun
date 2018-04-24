@@ -510,6 +510,10 @@ a img, button {
   font-weight: 700;
   src: url(../assets/fonts/DroidKufi-Bold.ttf) format("truetype"); }
 
+html, body {
+  width: 100%;
+  max-width: 100%; }
+
 html {
   font-size: 10px; }
   @media (max-width: 767px) {
@@ -731,18 +735,19 @@ a {
     @media (min-width: 768px) {
       .c-slider.red--text {
         width: 65%; } }
-    .c-slider.red--text .c-slider__nav {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-      .c-slider.red--text .c-slider__nav .icon {
-        font-size: 10rem; }
-      .c-slider.red--text .c-slider__nav .left {
-        position: relative;
-        left: -14.7rem; }
-      .c-slider.red--text .c-slider__nav .right {
-        position: relative;
-        right: -13.1rem; }
+    @media (min-width: 1025px) {
+      .c-slider.red--text .c-slider__nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .c-slider.red--text .c-slider__nav .icon {
+          font-size: 10rem; }
+        .c-slider.red--text .c-slider__nav .left {
+          position: relative;
+          left: -14.7rem; }
+        .c-slider.red--text .c-slider__nav .right {
+          position: relative;
+          right: -13.1rem; } }
     .c-slider.red--text .c-slider__slide__txt span {
       background: #D0021B;
       box-shadow: 5px 0 0 #D0021B, -5px 0 0 #D0021B; }
@@ -1087,6 +1092,9 @@ a {
 .b-albums-slider {
   background: #2c2c2c;
   padding: 3.8rem 0 5.1rem 0; }
+  @media (min-width: 768px) {
+    .b-albums-slider {
+      padding: 3.8rem 0 3.2rem 0; } }
   .b-albums-slider .c-section-title {
     color: #ffffff;
     font-size: 2rem; }

@@ -19,6 +19,11 @@ $ff-main-bold             : 'DroidKufi-Bold', $fontDefault;
 //----- Font size
 $font-size-base           : 10px;
 
+html, body {
+    width: 100%;
+    max-width: 100%;
+}
+
 // ----- GLOBAL FONT SETTINGS
 html {
     @include font-size-vw($font-size-base, $font-size-base, $font-size-base);
