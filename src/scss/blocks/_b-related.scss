@@ -1,0 +1,52 @@
+.b-related {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0.8rem 2rem 0 0.5rem;
+    @include breakpoint(overPhone) {
+        margin-top: 12.8rem;
+    }
+
+    .o-main {
+        width: 48%;
+        margin-left: 4%;
+        margin-bottom: 2.8rem;
+        @include breakpoint(overPhone) {
+            width: 32%;
+            margin-left: 2%;
+        }
+
+        @include breakpoint(phone) {
+            &:nth-child(2n+0) {
+                margin-left: 0;
+            }
+        }
+
+        @include breakpoint(overPhone) {
+            &:nth-child(3n+0) {
+                margin-left: 0;
+            }
+        }
+
+        &__img {
+            margin-bottom: 0.7rem;
+        }
+
+        &__tag {
+            margin-bottom: 0.5rem;
+
+            .icon {
+                font-size: 1.5rem;
+            }
+
+            &__txt {
+                font-size: cr(15px);
+            }
+        }
+
+        &__title {
+            font-size: cr(20px);
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+    }
+}
