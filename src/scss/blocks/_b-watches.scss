@@ -1,7 +1,7 @@
 .b-watches {
     margin-bottom: 8.7rem;
     @include breakpoint(overPhone) {
-        padding: 0 2rem 0 0.5rem;
+        padding: 0;
         margin-bottom: 6.7rem;
     }
 

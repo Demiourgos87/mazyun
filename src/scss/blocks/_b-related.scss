@@ -3,7 +3,7 @@
     flex-flow: row wrap;
     @include breakpoint(overPhone) {
         margin-top: 12.8rem;
-        padding: 0.8rem 2rem 0 0.5rem;
+        padding: 0.8rem 0 0 0;
     }
 
     .o-main {
