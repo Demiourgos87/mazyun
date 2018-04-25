@@ -1,0 +1,15 @@
+.c-copyright {
+    font-size: 2rem;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 5rem 0;
+    background: $color-white;
+    color: $color-mine-shaft;
+    @include breakpoint(overPhone) {
+        font-size: 1.2rem;
+        text-align: right;
+        padding: 4rem 2rem 0 0;
+    }
+}

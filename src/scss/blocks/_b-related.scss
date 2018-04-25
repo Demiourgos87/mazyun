@@ -1,9 +1,9 @@
 .b-related {
     display: flex;
     flex-flow: row wrap;
-    padding: 0.8rem 2rem 0 0.5rem;
     @include breakpoint(overPhone) {
         margin-top: 12.8rem;
+        padding: 0.8rem 2rem 0 0.5rem;
     }
 
     .o-main {
