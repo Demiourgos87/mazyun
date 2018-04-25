@@ -16,18 +16,4 @@
             margin-bottom: 3.5rem;
         }
     }
-
-    &__objects-list {
-        padding: 0 2rem;
-        margin-bottom: 6rem;
-        @include breakpoint(overPhone) {
-            display: flex;
-            flex-flow: row wrap;
-            align-items: flex-start;
-            padding: 0;
-            width: 66.5%;
-            margin-left: 2.5%;
-            margin-bottom: 0;
-        }
-    }
 }

@@ -1,6 +1,8 @@
 .b-watches {
+    margin-bottom: 8.7rem;
     @include breakpoint(overPhone) {
         padding: 0 2rem 0 0.5rem;
+        margin-bottom: 6.7rem;
     }
 
     .c-section-title {

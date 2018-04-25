@@ -1,0 +1,43 @@
+.b-objects-list {
+    padding: 0 2rem;
+    margin-bottom: 6rem;
+    @include breakpoint(overPhone) {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        padding: 0;
+        width: 66.5%;
+        margin-left: 2.5%;
+        margin-bottom: 0;
+    }
+
+    .o-main {
+        @include breakpoint(overPhone) {
+            width: 48%;
+            margin-left: 4%;
+            margin-bottom: 2rem;
+        }
+
+        &:nth-child(2n+0) {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .o-main__title {
+        @include breakpoint(phone) {
+            font-size: cr(36.75px);
+            margin-bottom: 3rem;
+        }
+    }
+
+    .o-main__desc {
+        @include breakpoint(phone) {
+            font-size: cr(32.66px);
+            line-height: cr(49px);
+        }
+    }
+}

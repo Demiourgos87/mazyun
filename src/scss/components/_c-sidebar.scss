@@ -1,0 +1,19 @@
+.c-sidebar {
+    width: 100%;
+    @include breakpoint(overPhone) {
+        width: 31%;
+    }
+
+    &.to--top {
+        @include breakpoint(overPhone) {
+            margin-top: -5rem;
+        }
+    }
+
+    .c-ad-holder {
+        margin-top: 8.7rem;
+        @include breakpoint(overPhone) {
+            margin-top: 3.3rem;
+        }
+    }
+}
